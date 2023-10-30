@@ -1,0 +1,28 @@
+{
+  "tabWidth": 2,
+  "useTabs": true,
+  "printWidth": 200,
+  "singleQuote": false,
+  "overrides": [
+    {
+      "files": ["*.html", "*.htm"],
+      "options": {
+        "parser": "html",
+        "tabWidth": 2,
+        "useTabs": true,
+        "printWidth": 200,
+        "singleQuote": false
+      }
+    },
+    {
+      "files": ["*.css"],
+      "options": {
+        "parser": "css",
+        "tabWidth": 4,
+        "useTabs": true,
+        "printWidth": 180,
+        "singleQuote": false
+      }
+    }
+  ]
+}
