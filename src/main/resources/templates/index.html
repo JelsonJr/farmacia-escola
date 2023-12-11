@@ -1,26 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8"/>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>Farmácia Escola</title>
-</head>
-<body class="bg-zinc-100">
-<header class="my-16">
-    <h1 class="flex justify-center items-center text-6xl text-blue-600 font-bold cursor-default">
-        Farmácia <p class="text-blue-800">Escola</p>
-        <svg xmlns="http://www.w3.org/2000/svg" width="76" height="76" fill="#A52929" viewBox="0 0 256 256">
-            <path
-                    d="M71.76,140H31.7a12,12,0,1,1,0-24H65.33L77.78,97.34a12,12,0,0,1,20,0l22,33,6-9a12,12,0,0,1,10-5.34h24a12,12,0,1,1,0,24h-17.6l-12.46,18.66a12,12,0,0,1-20,0l-22-33-6,9A12,12,0,0,1,71.76,140ZM177.91,28c-20.12,0-38,7.93-50.07,21.56C115.74,35.93,97.89,28,77.76,28A66,66,0,0,0,12.07,86.68,12,12,0,0,0,36,89.32,42,42,0,0,1,77.76,52c17.83,0,32.75,9.4,38.95,24.54a12,12,0,0,0,22.25,0C145.16,61.4,160.08,52,177.91,52A42.08,42.08,0,0,1,220,94c0,29.42-25.86,57.77-47.56,76.36a329,329,0,0,1-44.58,31.81c-10.87-6.45-35.37-22-56.51-42.73a12,12,0,1,0-16.84,17.12c30.39,29.81,66.15,49.2,67.66,50a12.06,12.06,0,0,0,11.39,0C138,224.14,244,166.34,244,94A66.12,66.12,0,0,0,177.91,28Z"
-            ></path>
-        </svg>
-    </h1>
-</header>
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-spring4-4.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{fragmentos/index :: head('Farmácia Escola | Home')}"></head>
+<body class="bg-fundo p-5">
+
+<header th:replace="~{fragmentos/index :: titulo}"></header>
 <main class="grid grid-cols-12 gap-4 p-8">
     <div
             class="col-span-4 w-full px-5 py-10 bg-white border border-gray-200 rounded-lg shadow flex flex-col items-center justify-center h-full shadow-lg transition duration-300 ease-in-out hover:shadow-none"
     >
-        <svg xmlns="http://www.w3.org/2000/svg" width="76" height="76" fill="#95BBCA" viewBox="0 0 256 256">
+        <svg xmlns="http://www.w3.org/2000/svg" width="76" height="76" fill="#0077FF" viewBox="0 0 256 256">
             <path
                     d="M134.88,6.17a12,12,0,0,0-13.76,0,259,259,0,0,0-42.18,39C50.85,77.43,36,111.62,36,144a92,92,0,0,0,184,0C220,66.64,138.36,8.6,134.88,6.17ZM128,212a68.07,68.07,0,0,1-68-68c0-33.31,20-63.37,36.7-82.71A249.35,249.35,0,0,1,128,31.11a249.35,249.35,0,0,1,31.3,30.18C176,80.63,196,110.69,196,144A68.07,68.07,0,0,1,128,212Zm49.62-52.4a52,52,0,0,1-34,34,12.2,12.2,0,0,1-3.6.55,12,12,0,0,1-3.6-23.45,28,28,0,0,0,18.32-18.32,12,12,0,0,1,22.9,7.2Z"
             ></path>
@@ -43,9 +31,9 @@
         </a>
     </div>
     <div
-            class="col-span-4 w-full px-5 py-10 bg-white border border-gray-200 rounded-lg shadow flex flex-col items-center justify-center h-full shadow-lg transition duration-300 ease-in-out hover:shadow-none"
+            class="col-span-4 w-full px-5 py-10 bg-white border border-gray-200 rounded-lg shadow flex flex-col items-center justify-center h-full shadow-lg transition duration-300 ease-in-out hover:shadow-none bg-card"
     >
-        <svg xmlns="http://www.w3.org/2000/svg" width="76" height="76" fill="#95CAA0" viewBox="0 0 256 256">
+        <svg xmlns="http://www.w3.org/2000/svg" width="76" height="76" fill="#00CC66" viewBox="0 0 256 256">
             <path
                     d="M225.15,197.71,164,95.81V44h4a12,12,0,0,0,0-24H88a12,12,0,0,0,0,24h4V95.81L30.85,197.71A20,20,0,0,0,48,228H208a20,20,0,0,0,17.15-30.29ZM140,44V99.14a12,12,0,0,0,1.71,6.17l35.13,58.54c-10.79.86-25.15-1.31-43.42-10.56-14-7.08-27.46-11.33-40.27-12.76l21.14-35.22A12,12,0,0,0,116,99.14V44ZM55.06,204,79,164.19c13-1.11,27.62,2.42,43.62,10.52,19.61,9.92,36.25,13.31,49.85,13.31A75.44,75.44,0,0,0,190.11,186l10.83,18Z"
             ></path>
@@ -68,7 +56,7 @@
         </a>
     </div>
     <div
-            class="col-span-4 w-full px-5 py-10 bg-white border border-gray-200 rounded-lg shadow flex flex-col items-center justify-center h-full shadow-lg transition duration-300 ease-in-out hover:shadow-none"
+            class="col-span-4 w-full px-5 py-10 bg-white border border-gray-200 rounded-lg shadow flex flex-col items-center justify-center h-full shadow-lg transition duration-300 ease-in-out hover:shadow-none bg-card"
     >
         <svg xmlns="http://www.w3.org/2000/svg" width="76" height="76" fill="#AAAAAA" viewBox="0 0 256 256">
             <path
@@ -93,7 +81,7 @@
         </a>
     </div>
     <div
-            class="col-span-4 w-full px-5 py-10 bg-white border border-gray-200 rounded-lg shadow flex flex-col items-center justify-center h-full shadow-lg transition duration-300 ease-in-out hover:shadow-none"
+            class="col-span-4 w-full px-5 py-10 bg-white border border-gray-200 rounded-lg shadow flex flex-col items-center justify-center h-full shadow-lg transition duration-300 ease-in-out hover:shadow-none bg-card"
     >
         <svg xmlns="http://www.w3.org/2000/svg" width="76" height="76" fill="#8D5A3B" viewBox="0 0 256 256">
             <path d="M172,156a12,12,0,0,1-12,12H96a12,12,0,0,1,0-24h64A12,12,0,0,1,172,156Zm-12-52H96a12,12,0,0,0,0,24h64a12,12,0,0,0,0-24Zm60-56V216a20,20,0,0,1-20,20H56a20,20,0,0,1-20-20V48A20,20,0,0,1,56,28H90.53a51.88,51.88,0,0,1,74.94,0H200A20,20,0,0,1,220,48ZM128,36a28,28,0,0,0-27.71,24h55.42A28,28,0,0,0,128,36Zm68,16H178.59A52.13,52.13,0,0,1,180,64v8a12,12,0,0,1-12,12H88A12,12,0,0,1,76,72V64a52.13,52.13,0,0,1,1.41-12H60V212H196Z"></path>
@@ -116,9 +104,9 @@
         </a>
     </div>
     <div
-            class="col-span-4 w-full px-5 py-10 bg-white border border-gray-200 rounded-lg shadow flex flex-col items-center justify-center h-full shadow-lg transition duration-300 ease-in-out hover:shadow-none"
+            class="col-span-4 w-full px-5 py-10 bg-white border border-gray-200 rounded-lg shadow flex flex-col items-center justify-center h-full shadow-lg transition duration-300 ease-in-out hover:shadow-none bg-card"
     >
-        <svg xmlns="http://www.w3.org/2000/svg" width="76" height="76" fill="#AAAAAA" viewBox="0 0 256 256">
+        <svg xmlns="http://www.w3.org/2000/svg" width="76" height="76" fill="#747EE1" viewBox="0 0 256 256">
             <path d="M125.18,156.94a64,64,0,1,0-82.36,0,100.23,100.23,0,0,0-39.49,32,12,12,0,0,0,19.35,14.2,76,76,0,0,1,122.64,0,12,12,0,0,0,19.36-14.2A100.33,100.33,0,0,0,125.18,156.94ZM44,108a40,40,0,1,1,40,40A40,40,0,0,1,44,108Zm206.1,97.67a12,12,0,0,1-16.78-2.57A76.31,76.31,0,0,0,172,172a12,12,0,0,1,0-24,40,40,0,1,0-14.85-77.16,12,12,0,1,1-8.92-22.28,64,64,0,0,1,65,108.38,100.23,100.23,0,0,1,39.49,32A12,12,0,0,1,250.1,205.67Z"></path>
         </svg>
         <h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-600 text-center">Usuários</h5>
@@ -138,9 +126,9 @@
         </a>
     </div>
     <div
-            class="col-span-4 w-full px-5 py-10 bg-white border border-gray-200 rounded-lg shadow flex flex-col items-center justify-center h-full shadow-lg transition duration-300 ease-in-out hover:shadow-none"
+            class="col-span-4 w-full px-5 py-10 bg-white border border-gray-200 rounded-lg shadow flex flex-col items-center justify-center h-full shadow-lg transition duration-300 ease-in-out hover:shadow-none bg-card"
     >
-        <svg xmlns="http://www.w3.org/2000/svg" width="76" height="76" fill="#747EE1" viewBox="0 0 256 256">
+        <svg xmlns="http://www.w3.org/2000/svg" width="76" height="76" fill="#95BBCA" viewBox="0 0 256 256">
             <path d="M108,84a16,16,0,1,1,16,16A16,16,0,0,1,108,84Zm128,44A108,108,0,1,1,128,20,108.12,108.12,0,0,1,236,128Zm-24,0a84,84,0,1,0-84,84A84.09,84.09,0,0,0,212,128Zm-72,36.68V132a20,20,0,0,0-20-20,12,12,0,0,0-4,23.32V168a20,20,0,0,0,20,20,12,12,0,0,0,4-23.32Z"></path>
         </svg>
         <h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-600 text-center">Sobre</h5>
